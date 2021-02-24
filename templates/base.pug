@@ -1,2 +1,16 @@
 -var header_items = ['Hello', 'Projects', 'Talk'] 
 -var details = ['(629) 555-0129', 'elisa@gmail.com']
+-var projectNames = ['leonidasesteban.com','MARVOL','NETNET	']
+-var projectContent = ['Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.', 'Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.','Películas y series ilimitadas y mucho más.Disfruta donde quieras. Cancela cuando quieras.']
+
+
+mixin project(image,name,content)
+	section.project 
+		img.project__img(src="./images/"+image, alt="image "+name)
+		.project__details 
+			h2.details--name= name 
+			p.details--content= content 
+			a.details__repo
+				span.repo-icon 
+				p See Code 
+			button.details__btn See Project

@@ -1,0 +1,60 @@
+.project{
+  margin-top: 50px;
+  padding: 10px;
+
+  &__img{
+    max-width: 652px;
+    min-width: 300px;
+    width: 100%;
+  }
+  &__details{
+    
+    
+    .details--name{
+      width: fit-content;
+      padding: 5px;
+      margin: 20px 0;
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: $color-primary;
+      background-color: $color-black;
+      box-shadow: -4px 4px 0px 0px #FFFFFF;
+    }
+    .details--content{
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+    }
+    .details__repo{
+      display: block;
+      padding: 10px;
+      margin: 20px 0;
+      width: 100%;
+      text-align: center;
+      border: $color-black 2px solid; 
+      border-radius: 20px;
+        
+        .repo-icon{
+          @include icon(20px, 20px);
+          vertical-align: middle;
+          background: url('../images/icons/github.svg') center / cover no-repeat;
+        }
+        p{
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+    }
+    .details__btn{
+      width: 100%;
+      padding: 10px;
+      @include textTransform(bold,1.5rem);
+      background-color: $color-primary;
+      border-radius: 20px;
+      border: $color-black 2px solid;
+      box-shadow: -4px 4px 14px 0px get-opacity(#000000, .3);
+
+    }
+  }
+}
