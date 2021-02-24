@@ -34,6 +34,12 @@ body{
   height: $height;
 }
 
+@mixin respond-to($min-Width){
+  @media screen and (min-width: $min-Width){
+    @content
+  }
+}
+
 @function get-opacity($color, $opacity){
   @return rgba($color,$opacity)
 }
