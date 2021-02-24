@@ -1,0 +1,35 @@
+// Fonts
+$mainFont: 'Oxygen', sans-serif;
+
+//Colors
+$color-black: #0F0A0A;
+$color-primary: #42E2B8;
+$background-gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: $mainFont;
+  font-size: 62.5%;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: $background-gradient;
+}
+@mixin textTransform($bold, $size) {
+  text-transform: uppercase;
+  font-size: $size;
+  @if $bold {
+    font-weight: $bold;
+  }
+}
+
+@function get-opacity($color, $opacity){
+  @return rgba($color,$opacity)
+}

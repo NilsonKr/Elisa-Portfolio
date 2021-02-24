@@ -1,0 +1,33 @@
+.header{
+  padding: 15px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    &__logo{
+      height: 45px;
+    }
+    &__menu{
+      display: none;
+      list-style: none;
+
+        li{
+          color: get-opacity($color-black, .6);
+          @include textTransform(bold,1.2rem);
+          display: inline-block;
+          margin: 0 10px;
+        }
+        .item1{
+          color: $color-black;
+        }
+    }
+    &__button{
+      padding: 15px;
+      @include textTransform(bold,1.4rem);
+      border-radius: 25px;
+      border: 3px $color-black solid;
+      background-color: $color-primary;
+      box-shadow: -4px 4px 14px 0px #0000003b;
+    }
+}
