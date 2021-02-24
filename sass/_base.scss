@@ -29,6 +29,11 @@ body{
     font-weight: $bold;
   }
 }
+@mixin icon($width, $height){
+  display: inline-block;
+  width: $width;
+  height: $height;
+}
 
 @function get-opacity($color, $opacity){
   @return rgba($color,$opacity)

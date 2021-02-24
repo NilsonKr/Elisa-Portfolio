@@ -63,4 +63,72 @@ body {
   -webkit-box-shadow: -4px 4px 14px 0px #0000003b;
           box-shadow: -4px 4px 14px 0px #0000003b;
 }
+
+.hero {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.hero__img img {
+  max-width: 290px;
+  width: 100%;
+}
+
+.hero__details h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.hero__details h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero__details .details--description {
+  font-size: 1.6rem;
+}
+
+.hero__details .details--phone {
+  margin: 15px 0;
+}
+
+.hero__details .details--phone p {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.hero__details .details--phone span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url("../images/icons/phone.svg") center/cover no-repeat;
+}
+
+.hero__details .details--email p {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.hero__details .details--email span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url("../images/icons/envelope.svg") center/cover no-repeat;
+}
 /*# sourceMappingURL=styles.css.map */
