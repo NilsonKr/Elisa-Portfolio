@@ -14,3 +14,10 @@ mixin project(image,name,content)
 				span.repo-icon 
 				p See Code 
 			button.details__btn See Project
+
+
+mixin opinion(image,opinion,status)
+	section.opinion 
+		img(src="./images/"+image, alt="Image of "+status)
+		h3.content "#{opinion}"
+		p.status= status  

@@ -1,0 +1,27 @@
+.opinion{
+  max-width: 800px;
+  width: 90%;
+  min-height: 240px;
+  display: flex;
+  flex-flow: column ;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+  border: 2px get-opacity($color-light,.7) solid;
+  border-radius: 20px;
+  background-color: get-opacity($color-light, .4);
+
+    .content{
+      @extend %content;
+      font-weight: bold;
+      margin: 25px 0;
+    }
+
+    .status{
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: get-opacity($color-black, .5);
+    }
+}

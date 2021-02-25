@@ -15,6 +15,26 @@ body {
   background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
 }
 
+.project__details .details--name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  margin: 20px 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #42E2B8;
+  background-color: #0F0A0A;
+  -webkit-box-shadow: -4px 4px 0px 0px #FFFFFF;
+          box-shadow: -4px 4px 0px 0px #FFFFFF;
+}
+
+.project__details .details--content, .opinion .content {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
 .header {
   padding: 15px;
   height: 80px;
@@ -69,30 +89,15 @@ body {
   padding: 0 10px;
 }
 
-@media screen and (min-width: 800px) {
-  .hero {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "description img";
-  }
-}
-
 .hero__img {
   display: block;
   margin: 0 auto;
   max-width: 320px;
-  grid-area: img;
 }
 
 .hero__img img {
   max-width: 290px;
   width: 100%;
-}
-
-.hero__details {
-  grid-area: description;
 }
 
 .hero__details h1 {
@@ -181,26 +186,6 @@ body {
   width: 100%;
 }
 
-.project__details .details--name {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px;
-  margin: 20px 0;
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: #42E2B8;
-  background-color: #0F0A0A;
-  -webkit-box-shadow: -4px 4px 0px 0px #FFFFFF;
-          box-shadow: -4px 4px 0px 0px #FFFFFF;
-}
-
-.project__details .details--content {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  font-weight: 400;
-}
-
 .project__details .details__repo {
   display: block;
   padding: 10px;
@@ -237,5 +222,40 @@ body {
   border: #0F0A0A 2px solid;
   -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.3);
           box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.3);
+}
+
+.opinion {
+  max-width: 800px;
+  width: 90%;
+  min-height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+  border: 2px rgba(255, 255, 255, 0.7) solid;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.opinion .content {
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.opinion .status {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgba(15, 10, 10, 0.5);
 }
 /*# sourceMappingURL=styles.css.map */
