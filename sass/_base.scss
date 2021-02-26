@@ -33,6 +33,17 @@ body{
   background-color: $color-black;
   box-shadow: -4px 4px 0px 0px #FFFFFF;
 }
+%input{
+  display: block;
+  width: 100%;
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
 
 %content{
   font-size: 1.6rem;
@@ -44,10 +55,22 @@ body{
 @mixin textTransform($bold, $size) {
   text-transform: uppercase;
   font-size: $size;
+  font-family: $mainFont;
   @if $bold {
     font-weight: $bold;
   }
 }
+
+@mixin button($padding){
+  width: 100%;
+  padding: $padding;
+  @include textTransform(bold,1.5rem);
+  background-color: $color-primary;
+  border-radius: 20px;
+  border: $color-black 2px solid;
+  box-shadow: -4px 4px 14px 0px get-opacity(#000000, .3);
+}
+
 @mixin icon($width, $height){
   display: inline-block;
   width: $width;

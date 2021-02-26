@@ -15,7 +15,7 @@ body {
   background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
 }
 
-.project__details .details--name {
+.project__details .details--name, .contact h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -29,7 +29,18 @@ body {
           box-shadow: -4px 4px 0px 0px #FFFFFF;
 }
 
-.project__details .details--content, .opinion .content {
+.form__container .form--name, .form__container .form--email, .form__container .form--message {
+  display: block;
+  width: 100%;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.project__details .details--content, .opinion .content, .contact p {
   font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: 400;
@@ -62,6 +73,7 @@ body {
   color: rgba(15, 10, 10, 0.6);
   text-transform: uppercase;
   font-size: 1.2rem;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
   display: inline-block;
   margin: 0 10px;
@@ -75,6 +87,7 @@ body {
   padding: 15px;
   text-transform: uppercase;
   font-size: 1.4rem;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
   border-radius: 25px;
   border: 3px #0F0A0A solid;
@@ -103,12 +116,14 @@ body {
 .hero__details h1 {
   text-transform: uppercase;
   font-size: 5rem;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
 }
 
 .hero__details h2 {
   text-transform: uppercase;
   font-size: 4rem;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -125,6 +140,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.6rem;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
 }
 
@@ -216,6 +232,7 @@ body {
   padding: 10px;
   text-transform: uppercase;
   font-size: 1.5rem;
+  font-family: "Oxygen", sans-serif;
   font-weight: bold;
   background-color: #42E2B8;
   border-radius: 20px;
@@ -257,5 +274,51 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   color: rgba(15, 10, 10, 0.5);
+}
+
+.contact {
+  margin-top: 40px;
+  padding: 15px;
+}
+
+.form__container {
+  margin-top: 20px;
+}
+
+.form__container .form--label {
+  position: relative;
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 10px 0 10px 10px;
+}
+
+.form__container .form--label::before {
+  content: '*';
+  position: absolute;
+  color: red;
+  right: -10px;
+}
+
+.form__container .form--name, .form__container .form--email, .form__container .form--message {
+  color: rgba(15, 10, 10, 0.6);
+  border: 1px solid rgba(15, 10, 10, 0.5);
+}
+
+.form__container .submit {
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  background-color: #42E2B8;
+  border-radius: 20px;
+  border: #0F0A0A 2px solid;
+  -webkit-box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -4px 4px 14px 0px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=styles.css.map */

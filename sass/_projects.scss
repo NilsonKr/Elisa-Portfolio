@@ -38,14 +38,7 @@
         }
     }
     .details__btn{
-      width: 100%;
-      padding: 10px;
-      @include textTransform(bold,1.5rem);
-      background-color: $color-primary;
-      border-radius: 20px;
-      border: $color-black 2px solid;
-      box-shadow: -4px 4px 14px 0px get-opacity(#000000, .3);
-
+      @include button(10px);
     }
   }
 }

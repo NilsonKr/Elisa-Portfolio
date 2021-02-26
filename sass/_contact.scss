@@ -1,0 +1,45 @@
+.contact{
+  margin-top: 40px;
+  padding: 15px;
+
+   h2{
+     @extend %title;
+   }
+
+   p{
+     @extend %content;
+   }
+}
+.form__container{
+  margin-top: 20px;
+
+    .form--label{
+      position: relative;
+      display: inline-block;
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin: 10px 0 10px 10px;
+
+        &::before{
+          content: '*';
+          position: absolute;
+          color: red;
+          right: -10px;
+        }
+
+    }
+    .form--name, .form--email, .form--message{
+      color:get-opacity($color-black,.6);
+      border: 1px solid get-opacity($color-black,.5);
+      @extend %input;
+    }
+
+    .submit{
+      display: block;
+      margin: 20px 0;
+      text-align: center;
+      @include button(15px); 
+    }
+
+}
+
