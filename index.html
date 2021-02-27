@@ -78,20 +78,20 @@
       <section class="contact">
         <h2>Let's Talk </h2>
         <P>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</P>
-        <form class="form__container" action="">
+        <form class="form__container" action="" id="form">
           <div class="input-container">
             <label class="form--label" for="name">Complete Name </label>
-            <input class="form--name" name="name" type="text" placeholder="Jonathan Alvarez">
+            <input class="form--name" name="name" id="name" type="text" placeholder="Jonathan Alvarez">
           </div>
           <div class="input-container">    
             <label class="form--label" for="email">E-mail</label>
-            <input class="form--email" name="email" type="e-mail" placeholder="jonaalvarez@gmail.com">
+            <input class="form--email" name="email" id="email" type="e-mail" placeholder="jonaalvarez@gmail.com">
           </div>
           <div class="input-container"> 
             <label class="form--label" for="message">Write me something</label>
-            <textarea class="form--message" name="message" cols="30" rows="10"> </textarea>
+            <textarea class="form--message" name="message" id="message" cols="30" rows="10"> </textarea>
           </div>
-          <submit class="submit">Send Message</submit>
+          <button class="submit" type="submit">Send Message</button><a href="mailto:me@leonidasesteban.com" id="trucazo">jojojoj</a>
         </form>
       </section>
       <footer><img class="footer__logo" src="./images/no-te-rindas.png" alt="Header Logo">
@@ -101,6 +101,7 @@
           <p class="info--details">Copyright 2021 - All the rights reserved.</p>
         </div>
       </footer>
+      <script src="./src/main.js"> </script>
     </main>
   </body>
 </html>
