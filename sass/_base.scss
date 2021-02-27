@@ -76,6 +76,15 @@ body{
   width: $width;
   height: $height;
 }
+%footer__icon{
+  @include icon(40px, 40px); 
+
+}
+
+@function get-opacity($color, $opacity){
+  @return rgba($color,$opacity)
+}
+
 
 @mixin respond-to($min-Width){
   @media screen and (min-width: $min-Width){
@@ -83,6 +92,6 @@ body{
   }
 }
 
-@function get-opacity($color, $opacity){
-  @return rgba($color,$opacity)
-}
+
+
+

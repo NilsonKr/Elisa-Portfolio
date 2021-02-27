@@ -1,0 +1,50 @@
+footer{
+  width: 100%;
+  padding: 10px;
+
+  .info__footer{
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+
+    .info--details{
+      @extend %content;
+    }
+  }
+}
+
+.icons__container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+
+    .icon-cont{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: $color-primary;
+      border: 2px solid $color-black;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 5px;
+    }
+    .phone{
+      @include icon(20px, 20px);
+      background: url('../images/icons/phone.svg') center / cover no-repeat;
+    }
+    .message{
+      @include icon(20px, 20px);
+      background: url('../images/icons/envelope.svg') center / cover no-repeat;
+    }
+    .instagram{
+      @include icon(20px, 20px);
+
+      background: url('../images/icons/instagram.svg') center / cover no-repeat;
+    }
+    .twitter{
+      @include icon(20px, 20px);
+      background: url('../images/icons/twitter.svg') center / cover no-repeat;
+    }
+}
