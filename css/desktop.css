@@ -1,0 +1,123 @@
+.header__menu {
+  display: block;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "description img";
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.hero__img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hero__details {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: description;
+}
+
+.project .details__repo, .project .details__btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 10px;
+}
+
+.project1, .project3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project1 .project__img, .project3 .project__img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.contact p {
+  text-align: center;
+}
+
+footer {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: block;
+}
+
+footer .info__footer {
+  text-align: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+footer .info__footer p {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+footer .icons__container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .icons__container .icon-cont {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=desktop.css.map */

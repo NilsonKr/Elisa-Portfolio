@@ -1,11 +1,14 @@
 section.contact
-  h2 HABLEMOS 
+  h2 Let's Talk 
   P Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.
   form(action="").form__container
-    label(for="name").form--label Complete Name 
-    input(name="name" type="text" placeholder="Jonathan Alvarez").form--name 
-    label(for="email").form--label E-mail
-    input(name="email" type="e-mail" placeholder="jonaalvarez@gmail.com").form--email
-    label(for="message").form--label Write me something
-    textarea(name="message" cols="30" rows="10").form--message 
+    .input-container
+      label(for="name").form--label Complete Name 
+      input(name="name" type="text" placeholder="Jonathan Alvarez").form--name
+    .input-container     
+      label(for="email").form--label E-mail
+      input(name="email" type="e-mail" placeholder="jonaalvarez@gmail.com").form--email
+    .input-container 
+      label(for="message").form--label Write me something
+      textarea(name="message" cols="30" rows="10").form--message 
     submit.submit Send Message

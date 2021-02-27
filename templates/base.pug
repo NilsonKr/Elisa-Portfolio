@@ -5,15 +5,14 @@
 
 
 mixin project(image,name,content)
-	section.project 
-		img.project__img(src="./images/"+image, alt="image "+name)
-		.project__details 
-			h2.details--name= name 
-			p.details--content= content 
-			a.details__repo
-				span.repo-icon 
-				p See Code 
-			button.details__btn See Project
+	img.project__img(src="./images/"+image, alt="image "+name)
+	.project__details 
+		h2.details--name= name 
+		p.details--content= content 
+		a.details__repo
+			span.repo-icon 
+			p See Code 
+		button.details__btn See Project
 
 
 mixin opinion(image,opinion,status)

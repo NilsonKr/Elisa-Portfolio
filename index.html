@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElisaCv</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 768px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap" rel="stylesheet">
@@ -38,7 +39,7 @@
         <p class="description__content">A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles</p>
         <h3>Aquí hay algunos que me gustaría compartir.</h3><span class="arrow"></span>
       </section>
-      <section class="project"> <img class="project__img" src="./images/leonidasesteban-com.png" alt="image leonidasesteban.com"/>
+      <section class="project project1"> <img class="project__img" src="./images/leonidasesteban-com.png" alt="image leonidasesteban.com"/>
         <div class="project__details"> 
           <h2 class="details--name">leonidasesteban.com</h2>
           <p class="details--content">Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p><a class="details__repo"><span class="repo-icon"> </span>
@@ -50,7 +51,7 @@
         <h3 class="content">"Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses "</h3>
         <p class="status">LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
       </section>
-      <section class="project"> <img class="project__img" src="./images/marvol.png" alt="image MARVOL"/>
+      <section class="project project2"> <img class="project__img" src="./images/marvol.png" alt="image MARVOL"/>
         <div class="project__details"> 
           <h2 class="details--name">MARVOL</h2>
           <p class="details--content">Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.</p><a class="details__repo"><span class="repo-icon"> </span>
@@ -62,7 +63,7 @@
         <h3 class="content">"Elisa ha superado mis expectativas desde el diseño hasta el desarrollo"</h3>
         <p class="status">JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
       </section>
-      <section class="project"> <img class="project__img" src="./images/netnet.png" alt="image NETNET	"/>
+      <section class="project project3"> <img class="project__img" src="./images/netnet.png" alt="image NETNET	"/>
         <div class="project__details"> 
           <h2 class="details--name">NETNET	</h2>
           <p class="details--content">Películas y series ilimitadas y mucho más.Disfruta donde quieras. Cancela cuando quieras.</p><a class="details__repo"><span class="repo-icon"> </span>
@@ -75,25 +76,26 @@
         <p class="status">MARCO CORTEZ / NETNET</p>
       </section>
       <section class="contact">
-        <h2>HABLEMOS </h2>
+        <h2>Let's Talk </h2>
         <P>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</P>
         <form class="form__container" action="">
-          <label class="form--label" for="name">Complete Name </label>
-          <input class="form--name" name="name" type="text" placeholder="Jonathan Alvarez">
-          <label class="form--label" for="email">E-mail</label>
-          <input class="form--email" name="email" type="e-mail" placeholder="jonaalvarez@gmail.com">
-          <label class="form--label" for="message">Write me something</label>
-          <textarea class="form--message" name="message" cols="30" rows="10"> </textarea>
+          <div class="input-container">
+            <label class="form--label" for="name">Complete Name </label>
+            <input class="form--name" name="name" type="text" placeholder="Jonathan Alvarez">
+          </div>
+          <div class="input-container">    
+            <label class="form--label" for="email">E-mail</label>
+            <input class="form--email" name="email" type="e-mail" placeholder="jonaalvarez@gmail.com">
+          </div>
+          <div class="input-container"> 
+            <label class="form--label" for="message">Write me something</label>
+            <textarea class="form--message" name="message" cols="30" rows="10"> </textarea>
+          </div>
           <submit class="submit">Send Message</submit>
         </form>
       </section>
-      <footer>
-        <div class="icons__container"> 
-          <div class="icon-cont"><span class="phone"> </span></div>
-          <div class="icon-cont"><span class="message"></span></div>
-          <div class="icon-cont"> <span class="instagram"></span></div>
-          <div class="icon-cont"> <span class="twitter"> </span></div>
-        </div>
+      <footer><img class="footer__logo" src="./images/no-te-rindas.png" alt="Header Logo">
+        <div class="icons__container"> <a class="icon-cont" href="#"><span class="phone"> </span></a><a class="icon-cont" href="#"><span class="message"></span></a><a class="icon-cont" href="#"> <span class="instagram"></span></a><a class="icon-cont" href="#"> <span class="twitter"> </span></a></div>
         <div class="info__footer"> 
           <p class="info--details">Made with &#x1F5A4 by Nilson Diaz </p>
           <p class="info--details">Copyright 2021 - All the rights reserved.</p>

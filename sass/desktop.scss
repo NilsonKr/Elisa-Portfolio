@@ -1,0 +1,88 @@
+.header__menu{
+  display: block;
+}
+
+.hero{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:  "description img" ;
+  gap: 20px;
+  padding: 0 50px; 
+  &__img{
+    grid-area: img;
+    justify-self: center;
+  }
+
+  &__details{
+    align-self: center;
+    grid-area: description;
+  }
+}
+
+
+.project{
+
+  .details__repo,  .details__btn{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 10px ;
+  }
+}
+
+.project1, .project3{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .project__img{
+      order: 2;
+    }
+}
+
+.project2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+.contact{
+  h2{
+    text-align: center;
+    width: 100%;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+footer{
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .footer__logo{
+    order: 1;
+    display: block;
+  }
+
+  .info__footer{
+    text-align: center;
+    order: 2;
+      p{
+        display: inline-block;
+        margin: 0 5px;
+      }
+  }
+  .icons__container{
+    width: fit-content;
+    order: 3;
+    justify-content: center;
+
+    .icon-cont{
+      margin: 0 5px;
+    }
+  }
+
+}

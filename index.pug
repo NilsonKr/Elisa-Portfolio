@@ -9,6 +9,8 @@ html(lang="en")
 		title ElisaCv
 		//- styles
 		link(rel="stylesheet", href="./css/styles.css") 
+		//- responsive
+		link(rel="stylesheet", href="./css/desktop.css" media="screen and (min-width: 768px)")
 		//- Webfonts
 		link(rel="preconnect", href="https://fonts.gstatic.com")
 		link(rel="dns-prefetch", href="https://fonts.gstatic.com")
@@ -18,11 +20,14 @@ html(lang="en")
 		main 
 			include templates/hero.pug
 			include templates/presentation.pug
-			+project("leonidasesteban-com.png",projectNames[0],projectContent[0])
+			section(class="project project1") 
+				+project("leonidasesteban-com.png",projectNames[0],projectContent[0])
 			+opinion("leonidas-esteban.png","Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses ","LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM")
-			+project("marvol.png",projectNames[1],projectContent[1])
+			section(class="project project2") 
+				+project("marvol.png",projectNames[1],projectContent[1])
 			+opinion("sutano.png","Elisa ha superado mis expectativas desde el diseño hasta el desarrollo","JASON LOPEZ / COFUNDADOR Y CEO MARVOL")
-			+project("netnet.png",projectNames[2],projectContent[2])
+			section(class="project project3") 
+				+project("netnet.png",projectNames[2],projectContent[2])
 			+opinion("mengano.png","Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos","MARCO CORTEZ / NETNET")
 			include templates/contact.pug
 			include templates/footer.pug
