@@ -1,3 +1,10 @@
+
+@mixin elipse($elipse, $x, $y){
+  background: url('../images/' + $elipse) center / cover no-repeat;
+  background-size: 150px;
+  background-position: $x $y;
+}
+
 .header__menu{
   display: block;
 }
@@ -8,6 +15,8 @@
   grid-template-areas:  "description img" ;
   gap: 20px;
   padding: 0 50px; 
+  @include elipse('redElipse.svg', 0%, 0%);
+
   &__img{
     grid-area: img;
     justify-self: center;
@@ -30,16 +39,21 @@
 }
 
 .project1, .project3{
-
   display: flex;
   justify-content: center;
   align-items: center;
+  @include elipse('greenElipse.svg', 10%, 100%);
     .project__img{
       order: 2;
     }
 }
 
+.project3{
+  background: none;
+}
+
 .project2{
+  @include elipse('greenElipse.svg', 90%, 0%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +61,7 @@
 } 
 
 .contact{
+  @include elipse('greenElipse.svg', 0%, 10%);
   h2{
     text-align: center;
     width: 100%;
